@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Cade Chaplin</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Cade Chaplin</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact" class="btn-contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" style="padding: 150px 0 80px">
+      <div class="container">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p class="subtitle">A showcase of my work and personal projects</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">All Projects</h2>
+
+          <div
+            class="project-filters"
+            style="margin-bottom: 3rem; text-align: center"
+          >
+            <button
+              class="btn btn-secondary active-filter"
+              data-filter="all"
+              style="margin: 0 0.5rem"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-secondary"
+              data-filter="web"
+              style="margin: 0 0.5rem"
+            >
+              Web Apps
+            </button>
+            <button
+              class="btn btn-secondary"
+              data-filter="mobile"
+              style="margin: 0 0.5rem"
+            >
+              Mobile Apps
+            </button>
+            <button
+              class="btn btn-secondary"
+              data-filter="other"
+              style="margin: 0 0.5rem"
+            >
+              Other
+            </button>
+          </div>
+
+          <div class="project-cards">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 1"
+                />
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  A full-featured online store solution with user
+                  authentication, product management, cart functionality, and
+                  payment integration.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/username/public-repo-1"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> View Code
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 2"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>
+                  A productivity application for managing tasks, projects, and
+                  team collaboration with real-time updates.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Vue.js</span>
+                  <span class="project-tag">Firebase</span>
+                  <span class="project-tag">Tailwind CSS</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/username/public-repo-2"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> View Code
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="mobile">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 3"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Fitness Tracker App</h3>
+                <p>
+                  A mobile application for tracking workouts, monitoring
+                  progress, and setting fitness goals.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">React Native</span>
+                  <span class="project-tag">Redux</span>
+                  <span class="project-tag">Expo</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/username/public-repo-3"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> View Code
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> App Store
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="other">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 4"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Machine Learning Model</h3>
+                <p>
+                  A machine learning model for predicting stock market trends
+                  based on historical data and sentiment analysis.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">TensorFlow</span>
+                  <span class="project-tag">Pandas</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/username/public-repo-4"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> View Code
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-file-alt"></i> Research Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 5"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Social Media Dashboard</h3>
+                <p>
+                  A dashboard for social media management with analytics, post
+                  scheduling, and audience insights.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Express</span>
+                  <span class="project-tag">Chart.js</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/username/public-repo-5"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> View Code
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Private Project -->
+            <div class="project-card" data-category="other">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Private Project"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Private Enterprise Solution</h3>
+                <p>
+                  A custom enterprise solution developed for a client with
+                  specific business requirements. Details are private due to
+                  NDA.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">AWS</span>
+                  <span class="project-tag">SQL</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    onclick="alert('This is a private repository. Please contact me for more information.');"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> Private Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub Repositories Section -->
+          <div style="margin-top: 5rem">
+            <h2 class="section-title">GitHub Repositories</h2>
+            <p style="max-width: 700px; margin: 0 auto 2rem">
+              Below are some of my GitHub repositories. These are automatically
+              fetched from my GitHub profile:
+            </p>
+
+            <div id="github-repos" style="max-width: 800px; margin: 0 auto">
+              <div
+                style="
+                  background-color: #eef2ff;
+                  border-left: 4px solid var(--primary);
+                  padding: 1.5rem;
+                  border-radius: 0.5rem;
+                  margin-bottom: 2rem;
+                "
+              >
+                <h3 style="margin-bottom: 1rem">Public Repositories</h3>
+                <ul id="public-repo-list" style="list-style: none; padding: 0">
+                  <li
+                    style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0"
+                  >
+                    Loading public repositories...
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                style="
+                  background-color: #eef2ff;
+                  border-left: 4px solid var(--primary);
+                  padding: 1.5rem;
+                  border-radius: 0.5rem;
+                "
+              >
+                <h3 style="margin-bottom: 1rem">Private Repositories</h3>
+                <ul id="private-repo-list" style="list-style: none; padding: 0">
+                  <li
+                    style="padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0"
+                  >
+                    Loading private repositories...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <h3>Cade Chaplin</h3>
+            <p>
+              A passionate software developer focused on creating efficient and
+              elegant solutions to complex problems.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Have a Project?</h3>
+            <ul>
+              <li><a href="index.html#contact">Let's Talk</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 Cade Chaplin. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="scripts/github-api.js"></script>
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+
+      // Project filtering
+      const filterButtons = document.querySelectorAll(
+        ".project-filters button"
+      );
+      const projectCards = document.querySelectorAll(".project-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => btn.classList.remove("active-filter"));
+
+          // Add active class to clicked button
+          button.classList.add("active-filter");
+
+          const filterValue = button.getAttribute("data-filter");
+
+          projectCards.forEach((card) => {
+            if (
+              filterValue === "all" ||
+              card.getAttribute("data-category") === filterValue
+            ) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
