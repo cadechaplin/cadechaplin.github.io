@@ -409,6 +409,11 @@ body {
   .project-cards {
     grid-template-columns: 1fr;
   }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* Add these new styles to the bottom of your main.css file */
@@ -618,4 +623,49 @@ footer {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Add these styles to make the contact section responsive */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* Mobile responsiveness for contact section */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Adjust form elements for mobile */
+@media (max-width: 480px) {
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
