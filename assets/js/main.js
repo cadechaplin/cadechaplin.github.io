@@ -3,6 +3,7 @@
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Form submission handling
+  return;
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
