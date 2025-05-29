@@ -223,14 +223,28 @@
     <script src="assets/js/template.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      // Form submission handling
+      // Form submission handling with Formspree
       document.addEventListener("DOMContentLoaded", function () {
         const contactForm = document.getElementById("contactForm");
         if (contactForm) {
           contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thank you for your message! I'll get back to you soon.");
-            contactForm.reset();
+            // Remove the preventDefault to allow the form to submit to Formspree
+            // e.preventDefault();
+
+            // Show a loading state on the button
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML =
+              '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // The form will be submitted to Formspree
+            // We can add some code to handle the form submission completion
+            setTimeout(function () {
+              // This is a backup in case the redirect doesn't happen
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+            }, 5000);
           });
         }
       });
