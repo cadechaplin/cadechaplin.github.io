@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spreadsheet Application | Cade Chaplin</title>
+    <div id="head-content"></div>
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <meta name="project-tags" content="csharp,desktop,ui" />
+    <meta name="featured" content="true" />
+    <meta
+      name="project-image"
+      content="../WebsiteImages/Spreadsheet/Overview.png"
+    />
+    <meta
+      name="github-repo"
+      content="https://github.com/cadechaplin/spreadsheet-app"
+    />
+    <meta
+      name="project-short-desc"
+      content="A cross-platform spreadsheet application with formula support and cell referencing built using C# and Avalonia UI."
+    />
+  </head>
+  <body>
+    <div id="navigation"></div>
+
+    <div class="project-header">
+      <div class="container">
+        <a href="../projects.html" class="back-link"
+          ><i class="fas fa-arrow-left"></i> Back to Projects</a
+        >
+        <h1>Spreadsheet Application</h1>
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="project-tag">C#</span>
+            <span class="project-tag">Avalonia UI</span>
+            <span class="project-tag">Cross-platform</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/cadechaplin/spreadsheet-app"
+              target="_blank"
+              class="btn btn-sm"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="project-content">
+      <div class="container">
+        <div class="project-showcase">
+          <img
+            src="../WebsiteImages/Spreadsheet/Overview.png"
+            alt="Spreadsheet Application Overview"
+            class="project-banner"
+            onerror="this.src='https://via.placeholder.com/1200x600'"
+          />
+
+          <div class="project-description">
+            <h2>Overview</h2>
+            <p>
+              This Spreadsheet Application is a cross-platform desktop
+              application built with C# and Avalonia UI that provides core
+              spreadsheet functionality with formula support, cell referencing,
+              and error handling. It features a clean, intuitive interface with
+              undo/redo capabilities and multi-cell selection.
+            </p>
+
+            <h2>Problem Statement</h2>
+            <p>
+              Many spreadsheet applications are either platform-specific or
+              overly complex. The goal was to create a lightweight,
+              cross-platform solution that focuses on core spreadsheet
+              functionality while maintaining a clean code structure and proper
+              error handling.
+            </p>
+
+            <h2>Key Features</h2>
+
+            <div class="feature-showcase">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Formula Support and Cell Referencing"
+                class="feature-image"
+              />
+              <div class="feature-desc">
+                <h3>Formula Support & Cell Referencing</h3>
+                <p>
+                  The application supports mathematical formulas and references
+                  to other cells. Users can create complex calculations that
+                  automatically update when referenced cells change. The formula
+                  parsing system handles parentheses, operators, and functions
+                  with proper precedence rules.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Circular Reference Detection"
+                class="feature-image"
+              />
+              <div class="feature-desc">
+                <h3>Error Handling & Circular Reference Detection</h3>
+                <p>
+                  The spreadsheet implements robust error handling for formula
+                  parsing and evaluation. It detects circular references before
+                  they cause infinite loops, providing clear feedback to users
+                  about the problem and highlighting the affected cells.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Undo and Redo Functionality"
+                class="feature-image"
+              />
+              <div class="feature-desc">
+                <h3>Undo & Redo Functionality</h3>
+                <p>
+                  All actions in the spreadsheet can be undone and redone,
+                  providing users with flexibility and confidence when making
+                  changes. The application maintains a history stack of
+                  operations allowing for multiple levels of undo/redo.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Multi-cell Selection"
+                class="feature-image"
+              />
+              <div class="feature-desc">
+                <h3>Multi-cell Selection & Highlighting</h3>
+                <p>
+                  Users can select multiple cells using shift-click or by
+                  dragging across the grid. The application also highlights
+                  cells being referenced by formulas, helping users understand
+                  dependencies between cells.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Save and Open Files"
+                class="feature-image"
+              />
+              <div class="feature-desc">
+                <h3>Save & Open Functionality</h3>
+                <p>
+                  Spreadsheets can be saved to and opened from XML files,
+                  preserving all cell data, formulas, and formatting. The XML
+                  structure is designed to be both human-readable and efficient
+                  for parsing.
+                </p>
+              </div>
+            </div>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+              <div class="tech-item">
+                <span class="tech-name">C#</span>
+                <span class="tech-desc">Core programming language</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Avalonia UI</span>
+                <span class="tech-desc">Cross-platform UI framework</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Rider IDE</span>
+                <span class="tech-desc">Development environment</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">StyleCop</span>
+                <span class="tech-desc">Code style enforcement</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">TDD</span>
+                <span class="tech-desc">Unit testing approach</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">XML</span>
+                <span class="tech-desc">File storage format</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">NUnit</span>
+                <span class="tech-desc">Testing Framework</span>
+              </div>
+            </div>
+
+            <h2>Development Approach</h2>
+            <p>
+              The application was developed using Test-Driven Development (TDD)
+              principles, ensuring high code quality and thorough test coverage.
+              StyleCop was used to maintain consistent code style and
+              readability across the codebase.
+            </p>
+            <p>
+              The project follows the Model-View-ViewModel (MVVM) architecture
+              pattern, separating the UI logic from the business logic and
+              making the code more maintainable and testable.
+            </p>
+
+            <h2>Challenges & Solutions</h2>
+            <p>
+              <strong>Formula Evaluation Challenge:</strong> Creating a robust
+              formula parser that could handle complex expressions while
+              maintaining good performance was challenging. The solution was to
+              implement a custom expression evaluator that converts formulas
+              into abstract syntax trees.
+            </p>
+            <p>
+              <strong>Circular Reference Detection:</strong> Detecting circular
+              dependencies between cells required careful implementation. I
+              developed a directed graph approach to track cell dependencies and
+              run cycle detection algorithms before evaluating formulas.
+            </p>
+            <p>
+              <strong>Cross-Platform UI:</strong> Ensuring consistent UI
+              behavior across different operating systems was solved by using
+              Avalonia UI, which provides a unified API for Windows, macOS, and
+              Linux platforms.
+            </p>
+
+            <h2>Outcome</h2>
+            <p>
+              The result is a streamlined yet powerful spreadsheet application
+              with a focus on core functionality, stability, and cross-platform
+              compatibility. The clean architecture and comprehensive test
+              coverage make it easy to maintain and extend with new features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-content"></div>
+
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

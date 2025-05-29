@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cade Chaplin | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <div id="head-content"></div>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">Cade Chaplin</a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="#contact" class="btn-contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
+    <div id="navigation"></div>
 
     <header class="hero">
       <div class="container">
@@ -61,101 +31,89 @@
           <div class="project-cards">
             <!-- Project Card 1 -->
             <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Project 1"
-                />
-              </div>
-              <div class="project-content">
-                <h3>Project Title 1</h3>
-                <p>
-                  A detailed description of this project, explaining what it
-                  does, the problem it solves, and how it was implemented.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">JavaScript</span>
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">Node.js</span>
+              <a
+                href="projects/dance-teaching-app.html"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="WebsiteImages/Dance/overview.png"
+                    alt="Dance Teaching App"
+                    onerror="this.src='https://via.placeholder.com/600x400'"
+                  />
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/username/public-repo-1"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i> View Code
-                  </a>
-                  <a href="#" class="project-link">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                  </a>
+                <div class="project-content">
+                  <h3>Dance Teaching App</h3>
+                  <p>
+                    AI-powered application using Google ML Pose Detection to
+                    teach dance movements and provide real-time feedback to
+                    users.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">ML</span>
+                    <span class="project-tag">UI/UX</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/cadechaplin/dance-teaching-app"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a
+                      href="projects/dance-teaching-app.html"
+                      class="project-link"
+                    >
+                      <i class="fas fa-info-circle"></i> More Details
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- Project Card 2 -->
             <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Project 2"
-                />
-              </div>
-              <div class="project-content">
-                <h3>Project Title 2</h3>
-                <p>
-                  A detailed description of this project, explaining what it
-                  does, the problem it solves, and how it was implemented.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">Python</span>
-                  <span class="project-tag">Django</span>
-                  <span class="project-tag">PostgreSQL</span>
+              <a
+                href="projects/spreadsheet-application.html"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="WebsiteImages/Spreadsheet/Overview.png"
+                    alt="Spreadsheet Application"
+                    onerror="this.src='https://via.placeholder.com/600x400'"
+                  />
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/username/public-repo-2"
-                    target="_blank"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i> View Code
-                  </a>
-                  <a href="#" class="project-link">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                  </a>
+                <div class="project-content">
+                  <h3>Spreadsheet Application</h3>
+                  <p>
+                    A cross-platform spreadsheet application with formula
+                    support and cell referencing built using C# and Avalonia UI.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">Avalonia UI</span>
+                    <span class="project-tag">Cross-platform</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/cadechaplin/spreadsheet-app"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a
+                      href="projects/spreadsheet-application.html"
+                      class="project-link"
+                    >
+                      <i class="fas fa-info-circle"></i> More Details
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <!-- Project Card 3 -->
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Private Project"
-                />
-              </div>
-              <div class="project-content">
-                <h3>Private Project</h3>
-                <p>
-                  This is a private project with restricted access. Please
-                  contact me for more information about this work.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">TypeScript</span>
-                  <span class="project-tag">Angular</span>
-                  <span class="project-tag">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="#"
-                    onclick="alert('This is a private repository. Please contact me for access.');"
-                    class="project-link"
-                  >
-                    <i class="fab fa-github"></i> Private Repository
-                  </a>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div style="text-align: center; margin-top: 3rem">
@@ -184,7 +142,7 @@
                 </div>
                 <div class="contact-item-content">
                   <h4>Email</h4>
-                  <p>your.email@example.com</p>
+                  <p>chaplincade@gmail.com</p>
                 </div>
               </div>
 
@@ -194,25 +152,32 @@
                 </div>
                 <div class="contact-item-content">
                   <h4>Location</h4>
-                  <p>Your City, State</p>
+                  <p>Snohomish, WA</p>
                 </div>
               </div>
 
               <div class="social-links">
-                <a href="#" class="social-link"
+                <a
+                  href="https://github.com/cadechaplin"
+                  class="social-link"
+                  target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <a href="#" class="social-link"
+                <a
+                  href="https://linkedin.com/in/cadechaplin"
+                  class="social-link"
+                  target="_blank"
                   ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-link"
-                  ><i class="fab fa-twitter"></i
                 ></a>
               </div>
             </div>
 
             <div class="contact-form">
-              <form id="contactForm">
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/xovdgrbz"
+                method="POST"
+              >
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input
@@ -253,78 +218,22 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <h3>Cade Chaplin</h3>
-            <p>
-              A passionate software developer focused on creating efficient and
-              elegant solutions to complex problems.
-            </p>
-            <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
+    <div id="footer-content"></div>
 
-          <div class="footer-links">
-            <h3>Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-links">
-            <h3>Have a Project?</h3>
-            <ul>
-              <li><a href="#contact">Let's Talk</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="copyright">
-          <p>&copy; 2023 Cade Chaplin. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
+    <script src="assets/js/template.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      // Mobile menu toggle
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
-      });
-
-      // Close mobile menu when clicking a link
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navLinks.classList.remove("active");
-        });
-      });
-
       // Form submission handling
-      const contactForm = document.getElementById("contactForm");
-      if (contactForm) {
-        contactForm.addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Form submitted! This is a demo, so no actual submission occurs."
-          );
-          contactForm.reset();
-        });
-      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contactForm");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thank you for your message! I'll get back to you soon.");
+            contactForm.reset();
+          });
+        }
+      });
     </script>
   </body>
 </html>
