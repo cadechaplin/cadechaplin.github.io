@@ -30,7 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
       github: "https://github.com/cadechaplin/steganography-chat",
       featured: false,
       detailPage: "projects/steganography-chatroom.html",
-      fallbackImage: "https://via.placeholder.com/600x400",
+    },
+    {
+      title: "Bullet Hell Game",
+      description:
+        "An Ancient Greek-themed bullet hell game built with MonoGame featuring mythological enemies, wave-based progression, and boss battles.",
+      tags: ["csharp", "monogame", "gamedev"],
+      image: "/WebsiteImages/BulletHell/overview.png",
+      github: "https://github.com/emmaebjohnson/Sccemj-Bullet-Hell-Game",
+      featured: false,
+      detailPage: "projects/bullet-hell-game.html",
+    },
+    {
+      title: "ACME Food Bank Inventory System",
+      description:
+        "A comprehensive inventory management system for ACME Food Bank built with MERN stack, featuring donation tracking, expiration monitoring, and reporting capabilities.",
+      tags: ["react", "mongodb", "express", "nodejs"],
+      image: "/WebsiteImages/Inventory-App/Inventory.png",
+      github: "https://github.com/cadechaplin/CPT-S-582-Project",
+      featured: false,
+      detailPage: "projects/Inventory-App.html",
     },
   ];
 
@@ -109,15 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize with all projects
   loadProjects();
-
-  // Auto-discover projects (this function would scan the projects directory)
-  function discoverProjects() {
-    // This would be implemented on the server side or using a build tool
-    // Here we just use the hardcoded projects array
-  }
-
-  // Initialize project discovery
-  discoverProjects();
 });
 
 // Function to add a new project programmatically (for future use)

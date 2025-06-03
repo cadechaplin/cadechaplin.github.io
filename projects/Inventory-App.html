@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Inventory Management App | Cade Chaplin</title>
+    <title>ACME Food Bank Inventory System | Cade Chaplin</title>
     <div id="head-content"></div>
     <link rel="stylesheet" href="../assets/css/project.css" />
-    <meta name="project-tags" content="go,web,database" />
+    <meta name="project-tags" content="react,mongodb,express,nodejs" />
     <meta name="featured" content="false" />
     <meta
       name="project-image"
-      content="../WebsiteImages/Inventory/overview.png"
+      content="../WebsiteImages/Inventory-App/Inventory.png"
     />
     <meta
       name="github-repo"
-      content="https://github.com/cadechaplin/inventory-management"
+      content="https://github.com/cadechaplin/CPT-S-582-Project"
     />
     <meta
       name="project-short-desc"
-      content="A robust inventory management system built with Go and PostgreSQL, featuring real-time updates and comprehensive reporting."
+      content="A comprehensive inventory management system for ACME Food Bank built with MERN stack, featuring donation tracking, expiration monitoring, and reporting capabilities."
     />
   </head>
   <body>
@@ -27,21 +27,28 @@
         <a href="../projects.html" class="back-link"
           ><i class="fas fa-arrow-left"></i> Back to Projects</a
         >
-        <h1>Inventory Management App</h1>
+        <h1>ACME Food Bank Inventory System</h1>
         <div class="project-meta">
           <div class="project-tags">
-            <span class="project-tag">Go</span>
-            <span class="project-tag">PostgreSQL</span>
-            <span class="project-tag">REST API</span>
-            <span class="project-tag">Docker</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Express</span>
+            <span class="project-tag">Node.js</span>
           </div>
           <div class="project-links">
             <a
-              href="https://github.com/cadechaplin/inventory-management"
+              href="https://github.com/cadechaplin/CPTS-582-Inventory-App"
               target="_blank"
               class="btn btn-sm"
             >
               <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=xKsAkyd9mNM"
+              target="_blank"
+              class="btn btn-sm"
+            >
+              <i class="fab fa-youtube"></i> Watch Demo
             </a>
           </div>
         </div>
@@ -52,8 +59,8 @@
       <div class="container">
         <div class="project-showcase">
           <img
-            src="../WebsiteImages/Inventory/overview.png"
-            alt="Inventory Management App Overview"
+            src="../WebsiteImages/Inventory-App/Inventory.png"
+            alt="ACME Food Bank Inventory System Overview"
             class="project-banner"
             onerror="this.src='https://via.placeholder.com/1200x600'"
           />
@@ -61,73 +68,99 @@
           <div class="project-description">
             <h2>Overview</h2>
             <p>
-              The Inventory Management App is a comprehensive solution for
-              businesses to track inventory, manage stock levels, and generate
-              reports. Built with Go for the backend and PostgreSQL for data
-              storage, it offers high performance and reliability for businesses
-              of all sizes.
+              The ACME Food Bank Inventory System is a comprehensive solution
+              designed to streamline donation tracking, ensure timely usage of
+              perishable items, and generate detailed reports. Built with the
+              MERN stack (MongoDB, Express, React, Node.js), it provides a
+              secure and efficient platform for managing food bank operations.
             </p>
 
             <h2>Problem Statement</h2>
             <p>
-              Many small to medium-sized businesses struggle with inventory
-              management, often relying on manual tracking methods or outdated
-              systems. This leads to inaccurate stock counts, overstocking or
-              stockouts, and inefficient operational processes.
+              Food banks often struggle with inventory management, particularly
+              tracking perishable items and their expiration dates. Manual
+              processes lead to food waste, inefficient distribution, and
+              challenges in reporting to stakeholders. The ACME Food Bank needed
+              a system to efficiently track donations, monitor expiration dates,
+              and provide role-based access for different types of users.
             </p>
 
             <h2>Key Features</h2>
 
             <div class="feature-showcase">
               <img
-                src="../WebsiteImages/Inventory/dashboard.png"
-                alt="Real-time Dashboard"
+                src="../WebsiteImages/Inventory-App/rbac.png"
+                alt="Role-Based Access Control"
                 class="feature-image"
                 onerror="this.src='https://via.placeholder.com/800x400'"
               />
               <div class="feature-desc">
-                <h3>Real-time Inventory Dashboard</h3>
+                <h3>Role-Based Access Control (RBAC)</h3>
                 <p>
-                  The application provides a real-time dashboard showing current
-                  stock levels, low stock warnings, and key inventory metrics.
-                  Users can quickly identify inventory issues and take proactive
-                  measures to maintain optimal stock levels.
+                  The system implements comprehensive RBAC with distinct roles
+                  including Admin, Employee, Volunteer, User, and Donor. Each
+                  role has specific permissions tailored to their
+                  responsibilities within the food bank operation, ensuring
+                  secure and appropriate access to features.
                 </p>
               </div>
             </div>
 
             <div class="feature-showcase">
               <img
-                src="../WebsiteImages/Inventory/barcode.png"
-                alt="Barcode Scanning"
+                src="../WebsiteImages/Inventory-App/Donation.png"
+                alt="Donation Tracking"
                 class="feature-image"
                 onerror="this.src='https://via.placeholder.com/800x400'"
               />
               <div class="feature-desc">
-                <h3>Barcode Scanning Integration</h3>
+                <h3>Donation & Inventory Management</h3>
                 <p>
-                  The system supports barcode scanning for quick and accurate
-                  inventory updates. Users can scan products to check prices,
-                  update quantities, or process sales, significantly reducing
-                  manual data entry errors.
+                  The application provides robust features for tracking
+                  donations and managing inventory. Users can record new
+                  donations, categorize items by type (perishable,
+                  non-perishable), assign storage locations, and track donor
+                  information. The inventory view offers advanced sorting and
+                  filtering capabilities to easily find and manage items.
                 </p>
               </div>
             </div>
 
             <div class="feature-showcase">
               <img
-                src="../WebsiteImages/Inventory/reports.png"
-                alt="Advanced Reporting"
+                src="../WebsiteImages/Inventory-App/reports.png"
+                alt="Expiration Tracking"
                 class="feature-image"
                 onerror="this.src='https://via.placeholder.com/800x400'"
               />
               <div class="feature-desc">
-                <h3>Advanced Reporting & Analytics</h3>
+                <h3>Expiration Tracking & Reporting</h3>
                 <p>
-                  Comprehensive reporting tools allow businesses to analyze
-                  inventory turnover rates, identify slow-moving items, and
-                  forecast future inventory needs. Reports can be customized and
-                  exported in various formats for further analysis.
+                  The system highlights items nearing expiration to prevent food
+                  waste. Comprehensive reporting tools allow staff to generate
+                  monthly inventory reports, track items expiring within
+                  specified timeframes, and export data to CSV for further
+                  analysis. This ensures efficient use of resources and aids in
+                  planning and decision-making.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/Inventory-App/2Factor.png"
+                alt="Two-Factor Authentication"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Enhanced Security with Two-Factor Authentication</h3>
+                <p>
+                  To ensure the highest level of security for sensitive food
+                  bank data, the system implements two-factor authentication for
+                  admin and employee accounts. This additional layer of
+                  protection helps prevent unauthorized access and safeguards
+                  donor information and inventory records.
                 </p>
               </div>
             </div>
@@ -135,86 +168,91 @@
             <h2>Technologies Used</h2>
             <div class="tech-stack">
               <div class="tech-item">
-                <span class="tech-name">Go (Golang)</span>
-                <span class="tech-desc">Backend API development</span>
+                <span class="tech-name">MongoDB</span>
+                <span class="tech-desc">NoSQL database</span>
               </div>
               <div class="tech-item">
-                <span class="tech-name">PostgreSQL</span>
-                <span class="tech-desc">Database management</span>
+                <span class="tech-name">Express.js</span>
+                <span class="tech-desc">Backend framework</span>
               </div>
               <div class="tech-item">
-                <span class="tech-name">Docker</span>
-                <span class="tech-desc">Containerization</span>
+                <span class="tech-name">React</span>
+                <span class="tech-desc">Frontend library</span>
               </div>
               <div class="tech-item">
-                <span class="tech-name">RESTful API</span>
-                <span class="tech-desc">API architecture</span>
+                <span class="tech-name">Node.js</span>
+                <span class="tech-desc">JavaScript runtime</span>
               </div>
               <div class="tech-item">
                 <span class="tech-name">JWT</span>
                 <span class="tech-desc">Authentication</span>
               </div>
               <div class="tech-item">
-                <span class="tech-name">React</span>
-                <span class="tech-desc">Frontend framework</span>
+                <span class="tech-name">Prisma</span>
+                <span class="tech-desc">ORM for database</span>
               </div>
             </div>
 
             <h2>Development Approach</h2>
             <p>
-              The application was developed using a microservices architecture,
-              allowing for independent scaling of different components based on
-              load requirements. I used a test-driven development approach,
-              ensuring high code quality and reliability.
+              The application was developed using an Agile methodology with
+              sprints focused on incremental feature implementation. The MERN
+              stack was chosen for its flexibility, performance, and scalability
+              in web applications.
             </p>
             <p>
-              The backend API was built with Go's Gin framework, providing
-              excellent performance for high-throughput inventory operations.
-              PostgreSQL was chosen for its robustness and support for complex
-              queries needed for inventory reporting.
+              MongoDB provides a flexible schema for varied inventory items,
+              Express.js offers a robust API framework, React delivers a
+              responsive and interactive user interface, and Node.js ensures
+              efficient server-side processing. The project follows a modular
+              architecture with clear separation of concerns between frontend
+              and backend components.
             </p>
 
             <h2>Challenges & Solutions</h2>
             <p>
-              <strong>Data Consistency:</strong> Maintaining data consistency
-              across concurrent inventory operations was challenging. I
-              implemented optimistic concurrency control with version numbers to
-              detect conflicts and provide appropriate error handling.
+              <strong>Role-Based Security:</strong> Implementing a comprehensive
+              RBAC system was challenging. The solution involved creating a
+              hierarchical role structure with well-defined permissions that
+              controlled access at both the frontend and backend levels.
             </p>
             <p>
-              <strong>Performance at Scale:</strong> As inventory data grows,
-              query performance can degrade. I addressed this by implementing
-              efficient indexing strategies, query optimization, and
-              implementing a caching layer for frequently accessed data.
+              <strong>Expiration Management:</strong> Tracking perishable items
+              effectively required designing a system that could filter, sort,
+              and highlight items based on expiration status. Custom date
+              handling and visual indicators were implemented to make expiring
+              items immediately obvious.
             </p>
             <p>
-              <strong>Real-time Updates:</strong> Providing real-time inventory
-              updates across multiple clients required a robust notification
-              system. I solved this by implementing a WebSocket-based pub/sub
-              mechanism that efficiently propagates inventory changes to all
-              connected clients.
+              <strong>User Authentication:</strong> Securing the system while
+              maintaining usability was addressed by implementing JWT
+              authentication with two-factor authentication (2FA) support,
+              providing a balance between security and convenience.
             </p>
 
             <h2>Outcome</h2>
             <p>
-              The Inventory Management App successfully addresses the challenges
-              of modern inventory management with a scalable, high-performance
-              solution. Key outcomes include:
+              The ACME Food Bank Inventory System successfully addresses the
+              challenges of food bank inventory management with a secure,
+              user-friendly solution. Key outcomes include:
             </p>
             <ul>
-              <li>Reduction in inventory discrepancies by up to 95%</li>
-              <li>Decreased stockout incidents by 85%</li>
+              <li>Streamlined donation processing and inventory tracking</li>
               <li>
-                Improved operational efficiency through automated workflows
+                Reduced food waste through effective expiration monitoring
               </li>
               <li>
-                Enhanced decision-making through accurate, real-time reporting
+                Enhanced reporting capabilities for better decision-making
+              </li>
+              <li>Improved security through role-based access control</li>
+              <li>
+                User-friendly interface accessible on mobile and desktop devices
               </li>
             </ul>
             <p>
-              The application demonstrates how modern Go-based backend systems
-              can provide enterprise-grade inventory management capabilities
-              with excellent performance and reliability.
+              The application demonstrates how the MERN stack can be leveraged
+              to create efficient, secure inventory management systems for
+              organizations with complex tracking needs.
             </p>
           </div>
         </div>

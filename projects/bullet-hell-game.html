@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bullet Hell Game | Cade Chaplin</title>
+    <div id="head-content"></div>
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <meta name="project-tags" content="csharp,monogame,gamedev" />
+    <meta name="featured" content="false" />
+    <meta
+      name="project-image"
+      content="../WebsiteImages/BulletHell/overview.png"
+    />
+    <meta
+      name="github-repo"
+      content="https://github.com/emmaebjohnson/Sccemj-Bullet-Hell-Game"
+    />
+    <meta
+      name="project-short-desc"
+      content="An Ancient Greek-themed bullet hell game built with MonoGame featuring mythological enemies, wave-based progression, and boss battles."
+    />
+  </head>
+  <body>
+    <div id="navigation"></div>
+
+    <div class="project-header">
+      <div class="container">
+        <a href="../projects.html" class="back-link"
+          ><i class="fas fa-arrow-left"></i> Back to Projects</a
+        >
+        <h1>Bullet Hell Game</h1>
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="project-tag">C#</span>
+            <span class="project-tag">MonoGame</span>
+            <span class="project-tag">Game Dev</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/emmaebjohnson/Sccemj-Bullet-Hell-Game"
+              target="_blank"
+              class="btn btn-sm"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="project-content">
+      <div class="container">
+        <div class="project-showcase">
+          <img
+            src="../WebsiteImages/BulletHell/overview.png"
+            alt="Bullet Hell Game Screenshot"
+            class="project-banner"
+            onerror="this.src='https://via.placeholder.com/1200x600'"
+          />
+
+          <div class="project-description">
+            <h2>Overview</h2>
+            <p>
+              This Greek mythology-themed bullet hell game is a 2D shooter
+              developed as part of the Software Design (CPTS 487) class at
+              Washington State University. Built using the MonoGame/XNA
+              framework, it challenges players to dodge waves of enemy
+              projectiles while progressing through different mythological
+              encounters.
+            </p>
+
+            <h2>Problem Statement</h2>
+            <p>
+              Creating a bullet hell game involves solving complex technical
+              challenges including efficient collision detection with many
+              entities, managing game state, implementing enemy AI with diverse
+              attack patterns, and ensuring smooth performance even with
+              hundreds of projectiles on screen simultaneously.
+            </p>
+
+            <h2>Key Features</h2>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/BulletHell/gameplay.png"
+                alt="Gameplay Screenshot"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Dynamic Wave System</h3>
+                <p>
+                  The game features a JSON-driven wave system that controls
+                  enemy spawning and behavior patterns. This data-driven
+                  approach allows for easy creation of new levels and enemy
+                  types without modifying code. Each wave progressively
+                  increases in difficulty, challenging players to improve their
+                  skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/BulletHell/boss.png"
+                alt="Boss Battle"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Boss Encounters</h3>
+                <p>
+                  The game includes a mid-boss (Minotaur) and final boss (Zeus)
+                  with unique attack combinations and patterns defined in
+                  separate configuration files. These challenging encounters
+                  test player reflexes and pattern recognition with complex
+                  bullet patterns and phase-based behaviors.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/BulletHell/powerup.png"
+                alt="Power-up System"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Power-up System</h3>
+                <p>
+                  Players can collect various power-ups dropped by defeated
+                  enemies to enhance their capabilities. These include health
+                  restoration, temporary shields, and damage boosts. The
+                  power-up system adds strategic depth as players must decide
+                  when to risk collecting items during intense battles.
+                </p>
+              </div>
+            </div>
+
+            <h2>Design Principles</h2>
+            <p>The game is built around several core design principles:</p>
+
+            <div class="tech-stack">
+              <div class="tech-item">
+                <span class="tech-name">Thematic Cohesion</span>
+                <span class="tech-desc">
+                  Ancient Greek mythology provides the aesthetic foundation with
+                  enemies, environments, and bosses all derived from Greek
+                  legends.
+                </span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Progressive Difficulty</span>
+                <span class="tech-desc">
+                  Challenges increase gradually with carefully designed wave
+                  sequences building toward boss encounters.
+                </span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Varied Enemy Types</span>
+                <span class="tech-desc">
+                  From Harpies and Satyrs to Cyclopes and Gorgons, each enemy
+                  features unique movement and attack patterns.
+                </span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Bullet Pattern Diversity</span>
+                <span class="tech-desc">
+                  Multiple bullet types (basic, spread, homing, burst, and beam)
+                  provide varied gameplay challenges.
+                </span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Visual Clarity</span>
+                <span class="tech-desc">
+                  Art style inspired by ancient Greek pottery designs, ensuring
+                  player can distinguish between threats despite intense action.
+                </span>
+              </div>
+            </div>
+
+            <h2>Technical Architecture</h2>
+            <p>
+              The game is built using a Model-View-Controller architecture to
+              maintain clean separation of concerns:
+            </p>
+
+            <div class="tech-stack">
+              <div class="tech-item">
+                <span class="tech-name">Models</span>
+                <span class="tech-desc"
+                  >Game entities and core logic (Player, Enemy, Bullet,
+                  etc.)</span
+                >
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Views</span>
+                <span class="tech-desc"
+                  >Render game objects and effects to the screen</span
+                >
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Controllers</span>
+                <span class="tech-desc"
+                  >Game states, input handling, and game flow management</span
+                >
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <pre><code>
+public static class Globals
+{
+    public static float TotalSeconds { get; set; }
+    public static float TotalGameTime { get; set; }
+    private static float PreviousGameTime = 0f;
+    public static ContentManager Content { get; set; }
+    public static SpriteBatch SpriteBatch { get; set; }
+    public static int ScreenWidth { get; set; } = 1024;
+    public static int ScreenHeight { get; set; } = 900;
+    public static GameTime GameTime { get; set; }
+    
+    // Methods for tracking and managing game time
+    // ...
+}
+              </code></pre>
+              <p class="code-caption">
+                The Globals class maintains game-wide state and utilities
+              </p>
+            </div>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+              <div class="tech-item">
+                <span class="tech-name">C#</span>
+                <span class="tech-desc">Primary programming language</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">MonoGame/XNA</span>
+                <span class="tech-desc">Open-source game framework</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">JSON</span>
+                <span class="tech-desc"
+                  >Configuration for waves, enemies, and patterns</span
+                >
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Git</span>
+                <span class="tech-desc">Version control</span>
+              </div>
+            </div>
+
+            <h2>Implementation Challenges</h2>
+
+            <h3>Collision Detection Optimization</h3>
+            <p>
+              With potentially hundreds of bullets on screen simultaneously,
+              naive collision detection would cause significant performance
+              issues. We implemented optimized collision detection systems to
+              maintain performance while accurately detecting hits between
+              players, enemies, and projectiles.
+            </p>
+
+            <h3>Complex Enemy Behavior Patterns</h3>
+            <p>
+              To create engaging enemy behavior, we designed a pattern system
+              that combines basic movements with various attack patterns. These
+              components are configured through JSON files to create diverse and
+              challenging enemies without code changes.
+            </p>
+
+            <h2>Game Controls</h2>
+            <div class="controls-section">
+              <div class="control-item">
+                <span class="control-keys">WASD / Arrow Keys</span>
+                <span class="control-desc">Move the player</span>
+              </div>
+              <div class="control-item">
+                <span class="control-keys">Spacebar</span>
+                <span class="control-desc">Shoot</span>
+              </div>
+              <div class="control-item">
+                <span class="control-keys">E key</span>
+                <span class="control-desc"
+                  >Slow movement toggle (for precision dodging)</span
+                >
+              </div>
+              <div class="control-item">
+                <span class="control-keys">Escape</span>
+                <span class="control-desc">Pause game</span>
+              </div>
+            </div>
+
+            <h2>Outcome & Learnings</h2>
+            <p>
+              This project provided valuable experience in game development
+              principles, including game loops, sprite rendering, collision
+              detection, and state management. The data-driven approach to enemy
+              waves and patterns created a flexible system that could be
+              expanded with new content without significant code changes.
+            </p>
+            <p>
+              Performance optimization became a key learning area, as
+              maintaining good framerate with many entities required careful
+              attention to memory allocation patterns and efficient algorithms.
+              The team-based development process also provided valuable
+              experience in collaborative software design and implementation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-content"></div>
+
+    <script src="../assets/css/syntax-highlighting.css"></script>
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
