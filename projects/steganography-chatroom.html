@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Steganography Chatroom | Cade Chaplin</title>
+    <div id="head-content"></div>
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <meta name="project-tags" content="react,nodejs,websocket,security" />
+    <meta name="featured" content="false" />
+    <meta
+      name="project-image"
+      content="../WebsiteImages/Steganography/overview.png"
+    />
+    <meta
+      name="github-repo"
+      content="https://github.com/cadechaplin/steganography-chat"
+    />
+    <meta
+      name="project-short-desc"
+      content="Created a secure chat application embedding messages in images using LSB steganography with React and WebSockets."
+    />
+  </head>
+  <body>
+    <div id="navigation"></div>
+
+    <div class="project-header">
+      <div class="container">
+        <a href="../projects.html" class="back-link"
+          ><i class="fas fa-arrow-left"></i> Back to Projects</a
+        >
+        <h1>Steganography Chatroom</h1>
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">WebSockets</span>
+            <span class="project-tag">Security</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/cadechaplin/Steganography"
+              target="_blank"
+              class="btn btn-sm"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a
+              href="https://youtu.be/5gIu6jL1xRE?si=PKVxEQYciuWz_y-n"
+              target="_blank"
+              class="btn btn-sm"
+            >
+              <i class="fab fa-youtube"></i> Demo Video
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="project-content">
+      <div class="container">
+        <div class="project-showcase">
+          <img
+            src="../WebsiteImages/Steganography/overview.png"
+            alt="Steganography Chatroom Overview"
+            class="project-banner"
+            style="
+              max-height: 500px;
+              width: auto;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+            onerror="this.src='https://via.placeholder.com/1200x600'"
+          />
+
+          <div class="project-description">
+            <h2>Overview</h2>
+            <p>
+              The Steganography Chatroom is a secure messaging application that
+              hides communication within innocent-looking images using
+              steganography techniques. This unique approach provides an
+              additional layer of security beyond traditional encryption, as the
+              existence of the messages themselves is concealed.
+            </p>
+
+            <h2>Problem Statement</h2>
+            <p>
+              Traditional messaging applications make it evident that
+              communication is taking place. In situations where privacy is
+              paramount, merely encrypting message contents isn't enough if the
+              fact that a conversation exists can be detected. A more covert
+              approach to communication is needed.
+            </p>
+
+            <h2>Solution</h2>
+            <p>
+              Our application employs steganography with these key features:
+            </p>
+            <ul>
+              <li>Real-time chat using WebSocket technology</li>
+              <li>
+                Least Significant Bit (LSB) steganography for message hiding
+              </li>
+              <li>Random carrier image selection from a pool of images</li>
+              <li>Display of both message content and the carrier image</li>
+              <li>Username identification for all participants</li>
+            </ul>
+            <p>
+              This creates a system where messages appear as ordinary image
+              sharing, while communications remain hidden within the pixels.
+            </p>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/Steganography/embed.png"
+                alt="Message Encoding Process"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Steganographic Encoding</h3>
+                <p>
+                  The application uses LSB (Least Significant Bit) steganography
+                  to embed message data within image pixels. This technique
+                  modifies only the least significant bit of pixel color values,
+                  creating changes that are imperceptible to the human eye but
+                  can be detected and decoded by recipients. Each message is
+                  preceded by a 32-bit header indicating the message length for
+                  accurate retrieval.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/Steganography/Server.png"
+                alt="Covert Channel Communication"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>Covert Communication Channel</h3>
+                <p>
+                  While the current implementation transmits the carrier images
+                  over a WebSocket channel, the steganographic technique used
+                  creates a covert channel that could be deployed across any
+                  image-sharing platform. This makes the approach versatile for
+                  scenarios where standard messaging might be monitored or
+                  restricted.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-showcase">
+              <img
+                src="../WebsiteImages/Steganography/ui.png"
+                alt="User Interface"
+                class="feature-image"
+                onerror="this.src='https://via.placeholder.com/800x400'"
+              />
+              <div class="feature-desc">
+                <h3>User-Friendly Interface</h3>
+                <p>
+                  Despite the complex steganography mechanisms operating behind
+                  the scenes, the application features an intuitive chat
+                  interface built with React.js and styled with Tailwind CSS.
+                  The interface shows both the carrier images and the extracted
+                  messages, along with usernames and timestamps for each
+                  communication.
+                </p>
+              </div>
+            </div>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+              <div class="tech-item">
+                <span class="tech-name">React.js</span>
+                <span class="tech-desc">Frontend framework</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Node.js</span>
+                <span class="tech-desc">Server environment</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">WebSockets</span>
+                <span class="tech-desc"
+                  >Real-time bidirectional communication</span
+                >
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">HTML5 Canvas API</span>
+                <span class="tech-desc"
+                  >Image processing for steganography</span
+                >
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Tailwind CSS</span>
+                <span class="tech-desc">Styling and UI components</span>
+              </div>
+            </div>
+
+            <h2>My Role</h2>
+            <p>As the developer of this project, I was responsible for:</p>
+            <ul>
+              <li>
+                Implementing LSB steganography in JavaScript using Canvas API
+              </li>
+              <li>Building the React frontend with user authentication</li>
+              <li>Creating the WebSocket server for message broadcasting</li>
+              <li>Designing the UI with Tailwind CSS</li>
+              <li>Testing image capacity and steganographic robustness</li>
+            </ul>
+
+            <h2>Challenges & Solutions</h2>
+            <h3>Challenge: Browser Image Processing</h3>
+            <p>
+              Implementing steganography in a browser environment presents
+              unique challenges compared to server-side implementations,
+              particularly with image format compatibility.
+            </p>
+            <p>
+              <strong>Solution:</strong> I leveraged the HTML5 Canvas API to
+              manipulate image pixels directly in the browser, ensuring
+              consistent encoding and decoding regardless of browser variations.
+              Using PNG format with its lossless compression was crucial for
+              preserving the modified LSB data.
+            </p>
+
+            <h3>Challenge: Message Capacity</h3>
+            <p>
+              LSB steganography has limited capacity, as only the least
+              significant bit of each pixel can be modified without visible
+              changes.
+            </p>
+            <p>
+              <strong>Solution:</strong> I implemented a dynamic carrier image
+              selection system that randomly chooses from multiple images,
+              providing different capacities for various message lengths. A
+              32-bit header indicates the message length, ensuring proper
+              extraction even with varying image sizes.
+            </p>
+
+            <h2>Outcome</h2>
+            <p>
+              The Steganography Chatroom demonstrates how modern web
+              technologies can be combined with classical information hiding
+              techniques to create secure communication channels. The project
+              showcases both the technical implementation of browser-based
+              steganography and the creation of intuitive user interfaces for
+              security applications.
+            </p>
+            <p>
+              This application has educational value in demonstrating how
+              steganography works in practice and shows potential applications
+              in scenarios where covert communication channels might be
+              necessary or beneficial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-content"></div>
+
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
