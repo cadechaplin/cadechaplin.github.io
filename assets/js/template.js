@@ -1,17 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Load components
   loadComponent("head-content", "/components/header.html", false);
-  loadComponent("navigation", "/components/navigation.html", false);
+  loadComponent("navigation", "/components/navigation.html", false).then(() => {
+    // Only set up mobile navigation after navigation component is loaded
+    setTimeout(setupMobileNavigation, 100);
+  });
   loadComponent("footer-content", "/components/footer.html", false);
 
-  // Handle active navigation state
+  // Handle active navigation state after a short delay
   setTimeout(setActiveNavigation, 100);
 });
 
-// Function to load component content
+// Modified loadComponent to return a promise
 async function loadComponent(elementId, filePath, append = false) {
   const element = document.getElementById(elementId);
-  if (!element) return;
+  if (!element) return Promise.resolve();
 
   try {
     const response = await fetch(filePath);
@@ -25,8 +28,36 @@ async function loadComponent(elementId, filePath, append = false) {
     } else {
       element.innerHTML = content;
     }
+    return Promise.resolve();
   } catch (error) {
     console.error(`Failed to load component: ${error}`);
+    return Promise.reject(error);
+  }
+}
+
+// Separate function for mobile navigation
+function setupMobileNavigation() {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (hamburger && navLinks) {
+    // Remove any existing listeners first to avoid duplicates
+    const newHamburger = hamburger.cloneNode(true);
+    hamburger.parentNode.replaceChild(newHamburger, hamburger);
+
+    // Add click handler to the new element
+    newHamburger.addEventListener("click", () => {
+      newHamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+      console.log("Hamburger clicked"); // For debugging
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        newHamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
   }
 }
 
@@ -45,31 +76,13 @@ function setActiveNavigation() {
     currentPath === "/" ||
     currentPath === ""
   ) {
-    document.getElementById("nav-home").classList.add("active");
+    document.getElementById("nav-home")?.classList.add("active");
   } else if (currentPath.endsWith("about.html")) {
-    document.getElementById("nav-about").classList.add("active");
+    document.getElementById("nav-about")?.classList.add("active");
   } else if (
     currentPath.endsWith("projects.html") ||
     currentPath.includes("/projects/")
   ) {
-    document.getElementById("nav-projects").classList.add("active");
-  }
-
-  // Handle mobile menu toggle
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  if (hamburger && navLinks) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navLinks.classList.toggle("active");
-    });
-
-    document.querySelectorAll(".nav-links a").forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navLinks.classList.remove("active");
-      });
-    });
+    document.getElementById("nav-projects")?.classList.add("active");
   }
 }
