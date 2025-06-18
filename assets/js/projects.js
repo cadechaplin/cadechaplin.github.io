@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "A cross-platform spreadsheet application with formula support, cell referencing, and error handling built using C# and Avalonia UI.",
       tags: ["csharp", "desktop", "ui"],
-      image: "/WebsiteImages/Spreadsheet/overview.png",
+      image: "/WebsiteImages/Spreadsheet/Overview.png",
       github: "https://github.com/cadechaplin/spreadsheet-app",
       featured: true,
       detailPage: "projects/spreadsheet-application.html",
