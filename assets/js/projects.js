@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "AI-powered application using Google ML Pose Detection to teach dance movements and provide real-time feedback to users.",
       tags: ["python", "ml", "ui"],
-      image: "/WebsiteImages/DanceApp/overview.png",
+      image: "/WebsiteImages/danceApp/overview.png",
       github: "https://github.com/cadechaplin/dance-teaching-app",
       featured: true,
       detailPage: "projects/dance-teaching-app.html",
